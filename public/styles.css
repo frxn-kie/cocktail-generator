@@ -1,0 +1,50 @@
+body {
+    background-image:url("/images/smokey-background.jpg");
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(215, 81, 97);
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+input[type=submit] {
+    width: 90px;
+    background-color: rgb(215, 81, 97);
+    border-radius:6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 3px 4px 0 #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+    }   
+
+.image {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.image:hover {
+    box-shadow: 0 3px 4px 0 #000000;
+}
+
+.rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

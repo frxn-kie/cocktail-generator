@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+    <link rel = stylesheet href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Serif:wght@700&family=Rakkas&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<!-- displays instruction header before button is clicked, to be replaced by the name of a random cocktail once clicked -->
+    <% if (locals.content) { %>
+        <h1 class="rakkas-regular"><%= content %></h1>
+        <img src="<%= image%>" class="image">
+    <% } else { %>
+        <h1 class="rakkas-regular">Find your cocktail</h1>
+        <% } %>
+        <form id="cocktailForm" method="POST">
+            <input type="submit" value="Gin" formaction="/gin" class="button">
+            <input type="submit" value="Rum" formaction="/rum" class="button">
+            <input type="submit" value="Tequila" formaction="/tequila" class="button">
+            <input type="submit" value="Vodka" formaction="/vodka" class="button">
+            <input type="submit" value="Surprise me" formaction="/surprise-me" class="button">
+          </form>
+    </div>
+</body>
+</html>
