@@ -1,15 +1,27 @@
 import express from "express";
 import axios from "axios";
 
-const http = require("http");
-const PORT = process.env.PORT || 8080;
-const server = http.createServer();
+// // Import http library
+// const http = require("http")
+// // use env variable to define tcp/ip port with a default
+// const PORT = process.env.PORT || 8080
+// //create our server object
+// const server = http.createServer()
+// // We define a function that runs in response a request event
+// server.on("request", (request, response) => {
+//   // handle request based on method then URL
+//   response.statusCode = 200
+//   response.write("Hello World")
+//   response.end()
+// })
+// // get the server to start listening
+// server.listen(PORT, err => {
+//   // error checking
+//   err ? console.error(err) : console.log(`listening on port ${PORT}`)
+// })
 
-server.on("request", (request, response) => {
-  response.statusCode = 200
-  res.render("index.ejs")
-  response.end()
-})
+const app = express();
+const port = process.env.PORT || 8080;
   
   app.use(express.static("public"));
 
@@ -93,6 +105,6 @@ app.get("/", async (req, res) => {
         };
       });
 
-  server.listen(PORT, err => {
-    err ? console.error(err) : console.log(`listening on port ${PORT}`)
-  })
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
