@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+    <link rel = stylesheet href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Serif:wght@700&family=Rakkas&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-recipe"><h1 class="rakkas-regular"><%= name %></h1>
+    <h2>Ingredients</h2>
+    <ul>
+            <% for (i=0; i < ingredients.length; i++) { %>
+<li><%= measures[i] %> <%= ingredients[i] %></li>
+        <% }; %>
+        </ul>
+    <h2>Method</h2>
+<p><%= instructions %></p>
+</div>
+<form action="/" method="GET" class="back">
+    <input type="submit" value="Pick again" class="back-button">
+    </form>
+</body>
+</html>

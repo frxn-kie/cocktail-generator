@@ -8,6 +8,40 @@ h1 {
     color:rgb(215, 81, 97);
     justify-content: center;
     margin-top: 8rem;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(215, 81, 97);
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #FFF;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+li {
+    color: #FFF;
+    list-style: none;
+    text-align: center;
+}
+
+ul {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.back {
+    display: grid;
+}
+
+.back-button {
+    justify-self: center;
 }
 
 input[type=submit] {
@@ -29,13 +63,20 @@ input[type=submit]:hover {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
   justify-items: center;
     }   
+
+    .container-recipe {
+        display: grid;
+        grid-template-columns: 1fr;
+      justify-items: center;
+        }   
 
 .image {
     border-radius: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .image:hover {

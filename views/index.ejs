@@ -14,9 +14,10 @@
 <!-- displays instruction header before button is clicked, to be replaced by the name of a random cocktail once clicked -->
     <% if (locals.content) { %>
         <h1 class="rakkas-regular"><%= content %></h1>
-        <img src="<%= image%>" class="image">
+        <p>Click cocktail for recipe</p>
+        <a  href="/recipe/<%= id%>"><img src="<%= image%>" alt="Image of cocktail" class="image"></a>
     <% } else { %>
-        <h1 class="rakkas-regular">Find your cocktail</h1>
+        <h1 class="rakkas-regular">Pick your poison</h1>
         <% } %>
         <form id="cocktailForm" method="POST">
             <input type="submit" value="Gin" formaction="/gin" class="button">
