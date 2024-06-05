@@ -6,7 +6,7 @@ h1 {
     font-size: 4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:rgb(215, 81, 97);
-    justify-content: center;
+    justify-self: center;
     margin-top: 8rem;
     margin-bottom: 0px;
 }
@@ -65,7 +65,6 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
   justify-items: center;
-  justify-content: center;
     }   
 
     .container-recipe {
@@ -88,5 +87,10 @@ input[type=submit]:hover {
     font-family: "Rakkas", serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  #cocktail-form {
+    display: grid;
+    justify-items: center;
   }
   
