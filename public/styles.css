@@ -65,15 +65,8 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
   justify-items: center;
+  justify-content: center;
     }   
-
-    @media screen and (max-width: 768px) {
-        .container {
-            /* Adjust layout for smaller screens */
-            grid-template-columns: 1fr;
-            justify-content: center; /* Center content on smaller screens */
-        }
-    }
 
     .container-recipe {
         display: grid;
